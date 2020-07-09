@@ -1,0 +1,26 @@
+@import "./variable.scss";
+
+.app {
+  background-image: url(./../img/fond.png);
+  background-image: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  p {
+    color: $blanc;
+  }
+}
+
+//navbar
+.navigation {
+  float: bottom;
+}
+
+//Bordure
+.bordure {
+  height: 100vh;
+  border: none;
+}
+.bordure:hover {
+  background-color: $blanc;
+  opacity: 0.05;
+}
