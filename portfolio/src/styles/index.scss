@@ -9,14 +9,30 @@
     color: $blanc;
   }
 }
-
+H1 {
+  text-align: center;
+  color: $grisclair;
+  text-shadow: 5px 4px 4px rgba(1, 1, 1, 0.25);
+}
 //navbar
 .navigation {
-  float: bottom;
+  position: fixed;
+  bottom: 10px;
 }
 
+.navContener {
+  div {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $blanc;
+  }
+}
 //Bordure
 .bordure {
+  opacity: 0;
   height: 100vh;
   border: none;
 }
