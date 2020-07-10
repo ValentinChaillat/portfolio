@@ -11,7 +11,7 @@ class Home extends Component {
     competenceActive: false,
     experienceActive: false,
     realisationActive: false,
-    activePage: "Presentation",
+    activePage: "Realisation",
   };
 
   handleChangePage(e) {
@@ -124,7 +124,9 @@ class Home extends Component {
         <button
           className="bordure col-1 p-0 m-0"
           onClick={(e) => this.handleChangePageGauche()}
-        ></button>
+        >
+          <img alt="fleche de gauche" src="../img/fleche-gauche.png"></img>
+        </button>
         <div className="middle col-10 p-0 m-0 row">
           <div className="page col-12 m-0 p-0">
             {this.state.activePage === "Presentation" ? (
@@ -148,7 +150,13 @@ class Home extends Component {
                   href="#"
                   className="navContener col-12 p-0 m-0 row align-items-center"
                 >
-                  <div className="col-12 p-0 m-0"></div>
+                  <div
+                    className={
+                      this.state.activePage === "Presentation"
+                        ? "active col-12 p-0 m-0"
+                        : "col-12 p-0 m-0"
+                    }
+                  ></div>
                   <p className="col-12 p-0 m-0 text-center">Présentation</p>
                 </NavLink>
               </NavItem>
@@ -159,7 +167,13 @@ class Home extends Component {
                   href="#"
                   className="navContener col-12 p-0 m-0 row align-items-center"
                 >
-                  <div className="col-12 p-0 m-0"></div>
+                  <div
+                    className={
+                      this.state.activePage === "Competence"
+                        ? "active col-12 p-0 m-0"
+                        : "col-12 p-0 m-0"
+                    }
+                  ></div>
                   <p className="col-12 p-0 m-0 text-center">Compétence</p>
                 </NavLink>
               </NavItem>
@@ -170,7 +184,13 @@ class Home extends Component {
                   href="#"
                   className="navContener col-12 p-0 m-0 row align-items-center"
                 >
-                  <div className="col-12 p-0 m-0"></div>
+                  <div
+                    className={
+                      this.state.activePage === "Experience"
+                        ? "active col-12 p-0 m-0"
+                        : "col-12 p-0 m-0"
+                    }
+                  ></div>
                   <p className="col-12 p-0 m-0 text-center">Expérience</p>
                 </NavLink>
               </NavItem>
@@ -181,7 +201,13 @@ class Home extends Component {
                   href="#"
                   className="navContener col-12 p-0 m-0 row align-items-center"
                 >
-                  <div className="col-12 p-0 m-0"></div>
+                  <div
+                    className={
+                      this.state.activePage === "Realisation"
+                        ? "active col-12 p-0 m-0"
+                        : "col-12 p-0 m-0"
+                    }
+                  ></div>
                   <p className="col-12 p-0 m-0 text-center">Réalisation</p>
                 </NavLink>
               </NavItem>
@@ -192,7 +218,10 @@ class Home extends Component {
         <button
           className="bordure col-1 p-0 m-0"
           onClick={(e) => this.handleChangePageDroite()}
-        ></button>
+        >
+          {" "}
+          <img alt="fleche de droite" src="../img/fleche-droite.png"></img>
+        </button>
       </div>
     );
   }
