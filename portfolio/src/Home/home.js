@@ -4,6 +4,7 @@ import Presentation from "../components/presentation";
 import Competence from "../components/competence";
 import Experience from "../components/experience";
 import Realisation from "../components/realisation";
+import Contact from "../components/contact";
 
 class Home extends Component {
   state = {
@@ -11,7 +12,8 @@ class Home extends Component {
     competenceActive: false,
     experienceActive: false,
     realisationActive: false,
-    activePage: "Realisation",
+    contactActive: false,
+    activePage: "Presentation",
   };
 
   handleChangePage(e) {
@@ -21,6 +23,7 @@ class Home extends Component {
         competenceActive: false,
         experienceActive: false,
         realisationActive: false,
+        contactActive: false,
         activePage: "Presentation",
       });
     }
@@ -30,6 +33,7 @@ class Home extends Component {
         competenceActive: true,
         experienceActive: false,
         realisationActive: false,
+        contactActive: false,
         activePage: "Competence",
       });
     }
@@ -39,6 +43,7 @@ class Home extends Component {
         competenceActive: false,
         experienceActive: true,
         realisationActive: false,
+        contactActive: false,
         activePage: "Experience",
       });
     }
@@ -48,7 +53,18 @@ class Home extends Component {
         competenceActive: false,
         experienceActive: false,
         realisationActive: true,
+        contactActive: false,
         activePage: "Realisation",
+      });
+    }
+    if (e === "Contact") {
+      this.setState({
+        presentationActive: false,
+        competenceActive: false,
+        experienceActive: false,
+        realisationActive: false,
+        contactActive: true,
+        activePage: "Contact",
       });
     }
   }
@@ -56,8 +72,8 @@ class Home extends Component {
     if (this.state.activePage === "Presentation") {
       this.setState({
         presentationActive: false,
-        realisationActive: true,
-        activePage: "Realisation",
+        contactActive: true,
+        activePage: "Contact",
       });
     }
     if (this.state.activePage === "Competence") {
@@ -79,6 +95,13 @@ class Home extends Component {
         realisationActive: false,
         experienceActive: true,
         activePage: "Experience",
+      });
+    }
+    if (this.state.activePage === "Contact") {
+      this.setState({
+        realisationActive: true,
+        contactActive: false,
+        activePage: "Realisation",
       });
     }
   }
@@ -107,7 +130,14 @@ class Home extends Component {
     if (this.state.activePage === "Realisation") {
       this.setState({
         realisationActive: false,
+        contactActive: true,
+        activePage: "Contact",
+      });
+    }
+    if (this.state.activePage === "Contact") {
+      this.setState({
         presentationActive: true,
+        contactActive: false,
         activePage: "Presentation",
       });
     }
@@ -137,13 +167,15 @@ class Home extends Component {
               <Experience />
             ) : this.state.activePage === "Realisation" ? (
               <Realisation />
+            ) : this.state.activePage === "Contact" ? (
+              <Contact />
             ) : (
               "Portfolio de Valentin Chaillat"
             )}
           </div>
           <div className="navigation col-10 m-0 p-0">
             <Nav pills className="col-12 p-0 m-0 navPills">
-              <NavItem className="col-3 p-0 m-0 navItem">
+              <NavItem className="col-2 offset-1 p-0 navItem">
                 <NavLink
                   active={this.state.presentationActive}
                   onClick={(e) => this.handleChangePage("Presentation")}
@@ -160,7 +192,7 @@ class Home extends Component {
                   <p className="col-12 p-0 m-0 text-center">Présentation</p>
                 </NavLink>
               </NavItem>
-              <NavItem className="col-3 p-0 m-0 navItem">
+              <NavItem className="col-2 p-0 m-0 navItem">
                 <NavLink
                   active={this.state.competenceActive}
                   onClick={(e) => this.handleChangePage("Competence")}
@@ -177,7 +209,7 @@ class Home extends Component {
                   <p className="col-12 p-0 m-0 text-center">Compétence</p>
                 </NavLink>
               </NavItem>
-              <NavItem className="col-3 p-0 m-0 navItem">
+              <NavItem className="col-2 p-0 m-0 navItem">
                 <NavLink
                   active={this.state.experienceActive}
                   onClick={(e) => this.handleChangePage("Experience")}
@@ -194,7 +226,7 @@ class Home extends Component {
                   <p className="col-12 p-0 m-0 text-center">Expérience</p>
                 </NavLink>
               </NavItem>
-              <NavItem className="col-3 p-0 m-0 navItem">
+              <NavItem className="col-2 p-0 m-0 navItem">
                 <NavLink
                   active={this.state.realisationActive}
                   onClick={(e) => this.handleChangePage("Realisation")}
@@ -209,6 +241,23 @@ class Home extends Component {
                     }
                   ></div>
                   <p className="col-12 p-0 m-0 text-center">Réalisation</p>
+                </NavLink>
+              </NavItem>
+              <NavItem className="col-2 p-0 m-0 navItem">
+                <NavLink
+                  active={this.state.contactActive}
+                  onClick={(e) => this.handleChangePage("Contact")}
+                  href="#"
+                  className="navContener col-12 p-0 m-0 row align-items-center"
+                >
+                  <div
+                    className={
+                      this.state.activePage === "Contact"
+                        ? "active col-12 p-0 m-0"
+                        : "col-12 p-0 m-0"
+                    }
+                  ></div>
+                  <p className="col-12 p-0 m-0 text-center">Contact</p>
                 </NavLink>
               </NavItem>
             </Nav>

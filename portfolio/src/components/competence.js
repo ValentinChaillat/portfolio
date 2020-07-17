@@ -11,7 +11,7 @@ class Competence extends Component {
 
             <div className="col-11 offset-1 carte row py-3">
               <div className="col-12">
-                <div className="col-12 row  pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">HTML5 / CSS3 / SASS</p>
                   <div className="allBar col-12 m-0 p-0 row">
                     <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
@@ -26,7 +26,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">
                     Bootstrap / react Shard
                   </p>
@@ -43,7 +43,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">
                     React.js / Javascript
                   </p>
@@ -60,7 +60,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">PHP</p>
                   <div className="allBar col-12 m-0 p-0 row">
                     <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
@@ -75,7 +75,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row py-4">
+                <div className="col-12 row p-0 m-0 py-4">
                   <p className="col-11 offset-1 m-0 p-0">
                     Bootstrap / react Shard
                   </p>
@@ -100,7 +100,7 @@ class Competence extends Component {
 
             <div className="col-11 offset-1 carte row py-3">
               <div className="col-12">
-                <div className="col-12 row  pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">Visual Studio Code</p>
                   <div className="allBar col-12 m-0 p-0 row">
                     <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
@@ -115,7 +115,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">Linux / Windows</p>
                   <div className="allBar col-12 m-0 p-0 row">
                     <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
@@ -130,7 +130,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">Mac</p>
                   <div className="allBar col-12 m-0 p-0 row">
                     <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
@@ -145,7 +145,7 @@ class Competence extends Component {
                     <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row pt-4">
+                <div className="col-12 row p-0 m-0 pt-4">
                   <p className="col-11 offset-1 m-0 p-0">
                     Uber Eat's / Domino's
                   </p>
@@ -162,7 +162,7 @@ class Competence extends Component {
                     <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
                   </div>
                 </div>
-                <div className="col-12 row py-4">
+                <div className="col-12 row p-0 m-0 py-4">
                   <p className="col-11 offset-1 m-0 p-0">Figma</p>
                   <div className="allBar col-12 m-0 p-0 row">
                     <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
