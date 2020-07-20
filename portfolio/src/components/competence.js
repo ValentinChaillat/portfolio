@@ -76,20 +76,18 @@ class Competence extends Component {
                   </div>
                 </div>
                 <div className="col-12 row p-0 m-0 py-4">
-                  <p className="col-11 offset-1 m-0 p-0">
-                    Bootstrap / react Shard
-                  </p>
+                  <p className="col-11 offset-1 m-0 p-0">Git / Github</p>
                   <div className="allBar col-12 m-0 p-0 row">
-                    <div className="oneBar blanche offset-1 col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar blanche col-1 p-0 m-0 mr-1"></div>
-                    <div className="oneBar bleu col-1 p-0 m-0 mr-1"></div>
+                    <div className="oneBar blanche offset-1 col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar blanche col-1 p-0 m-0"></div>
+                    <div className="oneBar bleu col-1 p-0 m-0"></div>
                   </div>
                 </div>
               </div>

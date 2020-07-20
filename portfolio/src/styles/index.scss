@@ -1,4 +1,8 @@
 @import "./variable.scss";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/functions";
 
 .app {
   background-image: url(./../img/fond.png);
@@ -43,7 +47,17 @@ h1 {
     }
   }
 }
-
+@include media-breakpoint-down(sm) {
+  .navigation {
+    ul {
+      li {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
 //Presentation
 .presentation {
   .haut {
@@ -118,6 +132,7 @@ h1 {
             .allBar {
               .oneBar {
                 height: 4px;
+                margin-right: 1px !important;
               }
               .blanche {
                 background-color: $blanc;
@@ -181,7 +196,6 @@ h1 {
     }
   }
 }
-
 //contact
 .contact {
   p {
@@ -229,7 +243,6 @@ h1 {
 
 .popover {
   background-color: $bleufonce;
-
   div {
     h3 {
     }

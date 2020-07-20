@@ -74,8 +74,8 @@ class Contact extends Component {
               mailSent: result.data.sent,
             });
             this.state.mailSent === true
-              ? alert("E-mail sent")
-              : alert("Failed to send email");
+              ? alert("E-mail envoyé")
+              : alert("Échec de l'envoi du mail");
           })
           .catch((error) => this.setState({ error: error.message }));
         this.setState({
